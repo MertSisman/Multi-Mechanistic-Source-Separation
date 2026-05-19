@@ -25,7 +25,7 @@ To run the full MMSS pipeline, you will need:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YourUsername/MMSS.git](https://github.com/YourUsername/MMSS.git)
+   git clone [https://github.com/MertSisman/Multi-Mechanistic-Source-Separation.git](https://github.com/MertSisman/Multi-Mechanistic-Source-Separation.git)
    cd MMSS
    ```
 Install PyTorch:
