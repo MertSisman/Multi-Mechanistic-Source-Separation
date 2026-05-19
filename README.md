@@ -41,7 +41,7 @@ Repository Structure
 ```Plaintext
 MMSS/
 * data/                   # Place your preprocessed MEDI outputs here (iField, QSM, RDF)
-* dictionary/             # Pre simulated dictionary (.mat files)
+* dictionary/             # Run the dictionary simulation script and place the simulated dictionary (.mat files) here
 * scripts/                
   * run_MMSS_pipeline.m   # Main executable wrapper for the entire pipeline
 * src/                    
