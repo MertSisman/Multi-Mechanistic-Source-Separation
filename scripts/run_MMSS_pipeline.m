@@ -30,7 +30,7 @@ PYTHON_SCRIPT_PATH = fullfile(ML_DIR, 'train_and_process.py');
 disp('Loading dictionary and in vivo data...');
 
 % Note: Assuming the generated dictionary is stored in the data/ folder
-load(fullfile(DICTI_DIR, 'dictionary_MISSS_100K.mat'))
+load(fullfile(DICTI_DIR, 'dictionary_MMSS_100K.mat'))
 
 % Optional: If you had a 'dirs' loop in a wrapper, ensure 'm' is defined. 
 % disp(strcat("Starting ", dirs(m).name));
