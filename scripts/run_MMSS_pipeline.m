@@ -134,6 +134,16 @@ fwf = reshape(MMSS_results(:,3),size(QSM)) * 100 .*Mask;
 MVF = reshape(MMSS_results(:,4),size(QSM)) * 100 .*Mask;
 theta = reshape(MMSS_results(:,5),size(QSM)) * 90 .*Mask;
 
+chi_neg(chi_neg<0) = 0;
+chi_pos(chi_pos<0) = 0;
+fwf(fwf<0) = 0;
+MVF(MVF<0) = 0;
+theta(theta<0) = 0;
+
+fwf(fwf>100) = 100;
+MVF(MVF>100) = 100;
+theta(theta>90) = 90;
+                
 % Save final outputs back to DATA_DIR
 save(fullfile(DATA_DIR, 'MMSS_results.mat'), 'chi_neg', 'chi_pos', 'fwf', 'MVF', 'theta')
 disp('MMSS Pipeline complete. Results saved to data directory.');
