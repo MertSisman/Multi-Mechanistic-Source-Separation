@@ -67,7 +67,7 @@ function field = field_given_point_dipole(dipole_location,dipole_susceptibility,
 % Calculates the magnetic field perturbation of a point dipole
     field = dipole_susceptibility*(3*(Z-dipole_location(3)).^2 - ...
         (X-dipole_location(1)).^2-(Y-dipole_location(2)).^2-(Z-dipole_location(3)).^2) ...
-        ./(4*pi*((X-dipole_location(1)).^2+(Y-dipole_location(2)).^2+(Z-dipole_location(3)).^2.^2).^2.5);
+        ./(4*pi*((X-dipole_location(1)).^2+(Y-dipole_location(2)).^2+(Z-dipole_location(3)).^2).^2.5);
 end
 
 
